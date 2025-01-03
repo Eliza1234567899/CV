@@ -33,7 +33,7 @@
 }
 
 .border {
-    border-color: rgb(255, 255, 255);
+    border-image: linear-gradient(rgb(27, 111, 255), rgb(77, 0, 128), rgb(254, 173, 220)) 1;
     background-color: rgba(255,255,255,.5);
     border-style: double;
     margin-top: 100px;
@@ -52,17 +52,16 @@
     font-size: 15px;
     font-family: monospace;
     color: rgb(255, 255, 255);
-    margin-left: 490px;
+    margin-left: 420px;
 }
 
 .creative {
     border-radius: 5px;
-    border-color: white;
+    border-image: linear-gradient(rgb(246, 72, 72), rgb(249, 166, 22), rgb(255, 236, 144), rgb(70, 255, 135), rgb(0, 119, 255), rgb(168, 29, 255), rgb(255, 167, 205)) 1;
     border-style: dashed;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: papyrus;
    /* background-image: linear-gradient(rgb(247, 121, 121), rgb(246, 162, 93), rgb(251, 227, 139), rgb(128, 232, 124), rgb(132, 208, 244), rgb(197, 149, 252), rgb(251, 176, 210));*/
     color: rgb(83, 44, 67);
-    background-color: rgb(247, 121, 121);
     position: relative;
     animation-name: example;
     animation-duration: 4s;
@@ -118,17 +117,18 @@
 
 .border1 {
     border-style: solid;
-    background-color: rgba(255, 255, 255, 0.5);;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 250px;
-    border-color: white;
+    border-image: linear-gradient(rgb(27, 111, 255), rgb(77, 0, 128), rgb(254, 173, 220)) 1;
+    /*border-image: linear-gradient(rgb(246, 72, 72), rgb(249, 166, 22), rgb(255, 236, 144), rgb(70, 255, 135), rgb(0, 119, 255), rgb(168, 29, 255), rgb(255, 167, 205)) 1;*/
     height: 430px;
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 120px;
     font-family: monospace;
     display: flex;
     flex-direction: column;
     float: left;
-    justify-content: space-around;
+    justify-content: space-between;
     animation-name: stretch;
     animation-duration: 1.5s; 
     animation-timing-function: ease-out; 
@@ -141,22 +141,280 @@
 
 .border1 p {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(83, 44, 67);
+    text-align: center;
 }
 
 
 @keyframes stretch {
     0% {
       transform: scale(0.1);
-      background-image:linear-gradient((white, rgb(235, 218, 228)));
+      background-image:linear-gradient((white, rgb(255, 225, 243)));
       border-radius: 100%;
     }
     50% {
-        background-image:linear-gradient((white, rgb(235, 218, 228)));
+        background-image:linear-gradient((white, rgb(255, 225, 243)));
     }
     100% {
       transform: scale(1.0);
-      background-image:linear-gradient((white, rgb(235, 218, 228)));
+      background-image:linear-gradient((white, rgb(255, 225, 243)));
     }
   }
+
+  .borderStudy {
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.5);;
+    width: 320px;
+    border-image: linear-gradient(rgb(27, 111, 255), rgb(77, 0, 128), rgb(254, 173, 220)) 1;
+    height: 120px;
+    margin-top: 30px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: space-between;
+}
+
+.bs1 {
+    animation-name: bs1;
+    position: relative;
+    animation-duration: 2.2s; 
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.bs2 {
+    animation-name: bs2;
+    position: relative;
+    animation-duration: 2.2s; 
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.borderStudy p {
+    font-family: monospace;
+    font-size: 25px;
+    color: rgb(83, 44, 67);
+    text-align: center;
+}
+
+@keyframes bs1 {
+    0%   {background-color: rgba(255, 255, 255, 0.5); left:0px; top:0px;}
+    100% {background-color: rgba(98, 101, 104, 0.5); left: 0px; top: 320px;}
+  }
+
+  @keyframes bs2 {
+    0%   {background-color: rgba(255, 255, 255, 0.5); left:0px; top:0px;}
+    100% {background-color: rgba(158, 161, 164, 0.5); left: 0px; top: 160px;}
+  }
+
+  .html { 
+    display: flex;
+    align-items: end;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+.html:hover {
+    width: 80px;
+    height: 80px;
+}
+
+.progress{
+    display: flex;
+    border-style: solid;
+    width: 1100px;
+    margin-left: 100px;
+    position: relative;
+    background-image: linear-gradient(90deg,
+      #ff8383,
+      #ff8383,
+      #ffc965,
+      #a0ff61,
+      #00cb58 );
+    /*background-image: linear-gradient(rgb(255, 81, 81), rgb(255, 217, 135), rgb(147, 255, 120), rgb(45, 173, 116));*/
+    border-image: linear-gradient(rgb(27, 111, 255), rgb(77, 0, 128), rgb(254, 173, 220)) 1;
+
+}
+
+#CSS{
+    width: 1000px;
+    background-color: rgba(225, 226, 229, 0.748);
+    background-image: linear-gradient(90deg,
+      #ff8383,
+      #ff8383,
+      #ffc965,
+      #a0ff61,
+      #23df46 );
+}
+
+#JS {
+    width: 600px;
+    background-color: rgba(192, 193, 196, 0.748);
+    background-image: linear-gradient(90deg,
+      #ff8383,
+      #ff8383,
+      #ffc965,
+      #c2e773);
+}
+
+#PHP {
+    width: 500px;
+    background-color: rgba(162, 163, 165, 0.748);
+    background-image: linear-gradient(90deg,
+      #ff8383,
+      #ff8383,
+      #ffc965,
+      #d6dd6f);
+    
+}
+
+#DB {
+    width: 300px;
+    background-color: rgba(134, 136, 139, 0.748);
+    background-image: linear-gradient(90deg,
+      #ff8383,
+      #ff8383,
+      #ffc965);
+}
+
+.skills {
+    font-size: 50px;
+    position: absolute;
+    margin-left: 720px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    animation-name: skills;
+    animation-duration: 6.0s; 
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes skills {
+    0%   {color: #ffffff ; left:0px; top:0px;}
+    100% {color: #080045; left: 0px; top: 500px;}
+  }
+
+.contact{
+    font-size: 50px;
+}
+
+.contactinfo{
+     border-style: solid;
+     border-image: linear-gradient(rgb(27, 111, 255), rgb(77, 0, 128), rgb(254, 173, 220)) 1;
+     background-color: rgba(255, 255, 255, 0.416);
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     width: 400px;
+     word-wrap: break-word;
+     font-size: 30px;
+     margin-left: 400px;
+}
+
+.img {
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 85px;
+}
+
+@media (min-width: 1300px) {
+    .border1{
+        display: flex;
+        margin-left: 160px;
+    }
+    
+    .borderStudy {
+         display: flex;
+         width: 340px;
+    }
+
+    .skills {
+        margin-left: 820px;
+    }
+
+    .border {
+        margin-left: 750px;
+    }
+
+    .contactinfo {
+        margin-left: 550px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .border1{
+        display: flex;
+        margin-left: 230px;
+    }
+
+    .borderStudy {
+        display: flex;
+        width: 430px;
+   }
+
+   .progress {
+    width: 1250px;
+   }
+
+   .skills {
+    margin-left: 920px;
+}
+
+.border {
+    margin-left: 880px;
+}
+
+.creative {
+    width: 500px;
+    margin-left: 330px;
+}
+
+.contactinfo {
+    margin-left: 650px;
+}
+    
+}
+
+@media (min-width: 1900px) {
+    .border1{
+        display: flex;
+        margin-left: 290px;
+    }
+
+    .borderStudy {
+        display: flex;
+        width: 500px;
+   }
+
+   .progress {
+    width: 1400px;
+   }
+
+   .skills {
+    margin-left: 1020px;
+}
+
+.border {
+    margin-left: 970px;
+}
+
+.creative {
+    width: 700px;
+    margin-left: 400px;
+}
+
+.contactinfo {
+    margin-left: 750px;
+}
+    
+}   
